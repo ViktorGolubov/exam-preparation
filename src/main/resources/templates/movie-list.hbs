@@ -1,0 +1,13 @@
+<h1>Movies</h1>
+
+<ul>
+    {{#each movies}}
+        <li> {{title}}, {{length}} min,
+            {{#if adult}}
+                for adults.
+            {{else}}
+                for all audiences.
+            {{/if}}
+        </li>
+    {{/each}}
+</ul>
